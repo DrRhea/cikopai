@@ -71,8 +71,8 @@ export default function Hero() {
             opacity: 0,
             transform: 'translateY(32px)'
           }} 
-          onMouseEnter={(e) => e.target.style.backgroundColor = '#1a3a2e'} 
-          onMouseLeave={(e) => e.target.style.backgroundColor = '#2e4d3d'}
+          onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#1a3a2e'} 
+          onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#2e4d3d'}
         >
           Jelajahi Menu Kami
         </button>

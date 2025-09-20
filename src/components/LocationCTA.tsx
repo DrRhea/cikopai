@@ -45,10 +45,10 @@ export default function LocationCTA() {
               Tim kami siap melayani Anda dengan senyuman.
             </p>
             <div className="space-y-4">
-              <button className="w-full text-white font-semibold py-3 px-6 transition-colors" style={{ backgroundColor: '#2e4d3d' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#1a3a2e'} onMouseLeave={(e) => e.target.style.backgroundColor = '#2e4d3d'}>
+              <button className="w-full text-white font-semibold py-3 px-6 transition-colors" style={{ backgroundColor: '#2e4d3d' }} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#1a3a2e'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#2e4d3d'}>
                 Hubungi Kami
               </button>
-              <button className="w-full border-2 text-white font-semibold py-3 px-6 transition-colors" style={{ borderColor: '#2e4d3d', color: '#2e4d3d' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#2e4d3d'; e.target.style.color = 'white'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#2e4d3d'; }}>
+              <button className="w-full border-2 text-white font-semibold py-3 px-6 transition-colors" style={{ borderColor: '#2e4d3d', color: '#2e4d3d' }} onMouseEnter={(e) => { (e.target as HTMLButtonElement).style.backgroundColor = '#2e4d3d'; (e.target as HTMLButtonElement).style.color = 'white'; }} onMouseLeave={(e) => { (e.target as HTMLButtonElement).style.backgroundColor = 'transparent'; (e.target as HTMLButtonElement).style.color = '#2e4d3d'; }}>
                 Lihat Menu Lengkap
               </button>
             </div>
