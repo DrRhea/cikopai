@@ -27,9 +27,9 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
+        ? 'shadow-lg' 
         : 'bg-transparent'
-    }`}>
+    }`} style={isScrolled ? { backgroundColor: '#2e4d3d' } : {}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -38,9 +38,10 @@ export default function Navbar() {
               onClick={() => scrollToSection('hero')}
               className={`text-2xl font-bold transition-colors ${
                 isScrolled 
-                  ? 'text-gray-900 hover:text-amber-600' 
+                  ? 'hover:text-amber-300' 
                   : 'text-white hover:text-amber-300'
               }`}
+              style={isScrolled ? { color: '#ebf4e5' } : {}}
             >
               Cikopai
             </button>
@@ -53,9 +54,10 @@ export default function Navbar() {
                 onClick={() => scrollToSection('hero')}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-amber-600' 
+                    ? 'hover:text-amber-300' 
                     : 'text-white hover:text-amber-300'
                 }`}
+                style={isScrolled ? { color: '#ebf4e5' } : {}}
               >
                 Home
               </button>
@@ -63,9 +65,10 @@ export default function Navbar() {
                 onClick={() => scrollToSection('signature-menu')}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-amber-600' 
+                    ? 'hover:text-amber-300' 
                     : 'text-white hover:text-amber-300'
                 }`}
+                style={isScrolled ? { color: '#ebf4e5' } : {}}
               >
                 Signature Menu
               </button>
@@ -73,9 +76,10 @@ export default function Navbar() {
                 onClick={() => scrollToSection('the-story')}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-amber-600' 
+                    ? 'hover:text-amber-300' 
                     : 'text-white hover:text-amber-300'
                 }`}
+                style={isScrolled ? { color: '#ebf4e5' } : {}}
               >
                 The Story
               </button>
@@ -83,9 +87,10 @@ export default function Navbar() {
                 onClick={() => scrollToSection('gallery')}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-amber-600' 
+                    ? 'hover:text-amber-300' 
                     : 'text-white hover:text-amber-300'
                 }`}
+                style={isScrolled ? { color: '#ebf4e5' } : {}}
               >
                 Gallery
               </button>
@@ -93,9 +98,10 @@ export default function Navbar() {
                 onClick={() => scrollToSection('location')}
                 className={`px-3 py-2 text-sm font-medium transition-colors ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-amber-600' 
+                    ? 'hover:text-amber-300' 
                     : 'text-white hover:text-amber-300'
                 }`}
+                style={isScrolled ? { color: '#ebf4e5' } : {}}
               >
                 Location
               </button>
@@ -108,9 +114,10 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`focus:outline-none transition-colors ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-amber-600 focus:text-amber-600' 
+                  ? 'hover:text-amber-300 focus:text-amber-300' 
                   : 'text-white hover:text-amber-300 focus:text-amber-300'
               }`}
+              style={isScrolled ? { color: '#ebf4e5' } : {}}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (

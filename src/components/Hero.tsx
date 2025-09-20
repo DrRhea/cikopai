@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function Hero() {
@@ -24,7 +26,7 @@ export default function Hero() {
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
           Coffee Shop yang menghadirkan pengalaman kopi terbaik dengan suasana yang hangat dan nyaman
         </p>
-        <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 transition-colors shadow-lg">
+        <button className="text-white font-semibold py-3 px-8 transition-colors shadow-lg" style={{ backgroundColor: '#2e4d3d' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#1a3a2e'} onMouseLeave={(e) => e.target.style.backgroundColor = '#2e4d3d'}>
           Jelajahi Menu Kami
         </button>
       </div>
