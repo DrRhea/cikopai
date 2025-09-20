@@ -16,6 +16,8 @@ export default function Hero() {
             if (contentDiv) {
               contentDiv.classList.add('animate-fade-up');
             }
+            
+            // Background zoom animation akan berjalan otomatis dengan CSS
           }
         });
       },
