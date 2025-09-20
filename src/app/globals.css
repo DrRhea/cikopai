@@ -29,3 +29,39 @@ body {
 * {
   font-family: var(--font-aleo), "Aleo", Arial, Helvetica, sans-serif;
 }
+
+/* Hero Animation Classes */
+.hero-content.animate-fade-up {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  transition: all 1s ease-out !important;
+}
+
+.hero-content.animate-fade-up h1 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s ease-out 0.2s !important;
+}
+
+.hero-content.animate-fade-up p {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s ease-out 0.4s !important;
+}
+
+.hero-content.animate-fade-up button {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1s ease-out 0.6s !important;
+}
+
+/* Default styles untuk elemen yang belum di-animate */
+.hero-content h1, .hero-content p, .hero-content button {
+  transition: all 1s ease-out !important;
+}
+
+/* Pastikan hero section selalu full height */
+#hero {
+  min-height: 100vh !important;
+  height: 100vh !important;
+}
