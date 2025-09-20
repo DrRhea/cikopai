@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TheStory() {
   return (
     <section id="the-story" className="py-20 bg-gray-50">
@@ -23,8 +25,15 @@ export default function TheStory() {
               Setiap biji kopi dipilih dengan teliti dan disangrai dengan sempurna untuk memberikan cita rasa yang konsisten dan memuaskan.
             </p>
           </div>
-          <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-            <p className="text-gray-500">Gambar story akan ditambahkan</p>
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/images/story/cikopai-coffee-story.jpg"
+              alt="Cikopai Coffee Story - Coffee beans and preparation"
+              width={600}
+              height={400}
+              className="w-full h-96 object-cover"
+              priority
+            />
           </div>
         </div>
       </div>
