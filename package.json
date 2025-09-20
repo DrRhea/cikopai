@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.35.0",
     "@tailwindcss/cli": "^4.1.13",
     "clsx": "^2.1.1",
     "motion": "^12.23.16",
