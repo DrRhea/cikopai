@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Gallery() {
   return (
     <section id="gallery" className="py-20 bg-white">
@@ -11,24 +13,42 @@ export default function Gallery() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <p className="text-gray-500">Gallery Image 1</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+            <Image
+              src="/images/ambiance/cikopai-cafe-interior.jpg"
+              alt="Cikopai Cafe Interior - Industrial chic design with warm lighting"
+              width={400}
+              height={300}
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <p className="text-gray-500">Gallery Image 2</p>
+          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+            <Image
+              src="/images/ambiance/cikopai-cozy-atmosphere.jpg"
+              alt="Cikopai Cozy Atmosphere - Warm and inviting cafe environment"
+              width={400}
+              height={300}
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <p className="text-gray-500">Gallery Image 3</p>
+          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+            <Image
+              src="/images/ambiance/cikopai-social-gathering.jpg"
+              alt="Cikopai Social Gathering - Community space for meetings and conversations"
+              width={400}
+              height={300}
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <p className="text-gray-500">Gallery Image 4</p>
-          </div>
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <p className="text-gray-500">Gallery Image 5</p>
-          </div>
-          <div className="bg-gray-200 h-64 flex items-center justify-center">
-            <p className="text-gray-500">Gallery Image 6</p>
+          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+            <Image
+              src="/images/ambiance/cikopai-customer-experience.jpg"
+              alt="Cikopai Customer Experience - Relaxed atmosphere for enjoying coffee"
+              width={400}
+              height={300}
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
         </div>
       </div>
