@@ -44,13 +44,13 @@ export default function TheStory() {
     <section 
       ref={sectionRef}
       id="the-story" 
-      className="overflow-x-hidden"
+      className="overflow-x-hidden w-full"
       style={{ 
         background: 'linear-gradient(to bottom, #2e4d3d 0%, #1a3a2e 100%)'
       }}
     >
       {/* 2 Grid Layout - No margins */}
-      <div className="grid lg:grid-cols-2">
+      <div className="grid lg:grid-cols-2 w-full min-h-screen">
         {/* Left Grid - Content */}
         <div 
           ref={contentRef}
