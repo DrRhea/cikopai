@@ -29,3 +29,24 @@ body {
 * {
   font-family: var(--font-aleo), "Aleo", Arial, Helvetica, sans-serif;
 }
+
+/* Hero Animation Classes */
+.animate-fade-up {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+.animate-fade-up h1 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-up p {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-up button {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
