@@ -62,7 +62,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-2">
               <p className="text-sm opacity-80" style={{ color: '#ebf4e5' }}>
-                📍 Jl. Kopi No. 123, Jakarta
+                📍 Jl. Abdulrahman RT.11/RW.5, Cibubur, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13720
               </p>
               <p className="text-sm opacity-80" style={{ color: '#ebf4e5' }}>
                 📞 +62 812-3456-7890
@@ -93,7 +93,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center">
           <p className="text-sm opacity-60" style={{ color: '#ebf4e5' }}>
-            © 2025 Cikopai. All rights reserved. Made with ❤️ by XTRAHERA.
+            © 2025 Cikopai. All rights reserved.
           </p>
         </div>
       </div>
