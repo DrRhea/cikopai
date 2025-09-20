@@ -49,8 +49,8 @@ export default function Hero() {
       
       {/* Content - Hanya content yang di-animate */}
       <div 
-        className="hero-content relative z-10 text-center text-white"
-        style={{ opacity: 0, transform: 'scale(0.95)' }}
+        className="hero-content relative z-10 text-center"
+        style={{ opacity: 0, transform: 'scale(0.95)', color: '#ebf4e5' }}
       >
         <h1 
           className="text-6xl md:text-8xl font-bold mb-6 drop-shadow-lg"
@@ -64,18 +64,6 @@ export default function Hero() {
         >
           Coffee Shop yang menghadirkan pengalaman kopi terbaik dengan suasana yang hangat dan nyaman
         </p>
-        <button 
-          className="text-white font-semibold py-3 px-8 shadow-lg" 
-          style={{ 
-            backgroundColor: '#2e4d3d',
-            opacity: 0,
-            transform: 'translateY(32px)'
-          }} 
-          onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#1a3a2e'} 
-          onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#2e4d3d'}
-        >
-          Jelajahi Menu Kami
-        </button>
       </div>
     </section>
   );
