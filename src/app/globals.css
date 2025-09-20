@@ -31,22 +31,37 @@ body {
 }
 
 /* Hero Animation Classes */
-.animate-fade-up {
+.hero-content.animate-fade-up {
   opacity: 1 !important;
-  transform: translateY(0) scale(1) !important;
+  transform: scale(1) !important;
+  transition: all 1s ease-out !important;
 }
 
-.animate-fade-up h1 {
+.hero-content.animate-fade-up h1 {
   opacity: 1 !important;
   transform: translateY(0) !important;
+  transition: all 1s ease-out 0.2s !important;
 }
 
-.animate-fade-up p {
+.hero-content.animate-fade-up p {
   opacity: 1 !important;
   transform: translateY(0) !important;
+  transition: all 1s ease-out 0.4s !important;
 }
 
-.animate-fade-up button {
+.hero-content.animate-fade-up button {
   opacity: 1 !important;
   transform: translateY(0) !important;
+  transition: all 1s ease-out 0.6s !important;
+}
+
+/* Default styles untuk elemen yang belum di-animate */
+.hero-content h1, .hero-content p, .hero-content button {
+  transition: all 1s ease-out !important;
+}
+
+/* Pastikan hero section selalu full height */
+#hero {
+  min-height: 100vh !important;
+  height: 100vh !important;
 }

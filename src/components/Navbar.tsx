@@ -36,12 +36,8 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className={`text-2xl font-bold transition-colors ${
-                isScrolled 
-                  ? 'hover:text-amber-300' 
-                  : 'text-white hover:text-amber-300'
-              }`}
-              style={isScrolled ? { color: '#ebf4e5' } : {}}
+              className="text-2xl font-bold transition-colors hover:text-amber-300"
+              style={{ color: '#ebf4e5' }}
             >
               Cikopai
             </button>
@@ -52,56 +48,36 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => scrollToSection('hero')}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isScrolled 
-                    ? 'hover:text-amber-300' 
-                    : 'text-white hover:text-amber-300'
-                }`}
-                style={isScrolled ? { color: '#ebf4e5' } : {}}
+                className="px-3 py-2 text-sm font-medium transition-colors hover:text-amber-300"
+                style={{ color: '#ebf4e5' }}
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('signature-menu')}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isScrolled 
-                    ? 'hover:text-amber-300' 
-                    : 'text-white hover:text-amber-300'
-                }`}
-                style={isScrolled ? { color: '#ebf4e5' } : {}}
+                className="px-3 py-2 text-sm font-medium transition-colors hover:text-amber-300"
+                style={{ color: '#ebf4e5' }}
               >
                 Signature Menu
               </button>
               <button
                 onClick={() => scrollToSection('the-story')}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isScrolled 
-                    ? 'hover:text-amber-300' 
-                    : 'text-white hover:text-amber-300'
-                }`}
-                style={isScrolled ? { color: '#ebf4e5' } : {}}
+                className="px-3 py-2 text-sm font-medium transition-colors hover:text-amber-300"
+                style={{ color: '#ebf4e5' }}
               >
                 The Story
               </button>
               <button
                 onClick={() => scrollToSection('gallery')}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isScrolled 
-                    ? 'hover:text-amber-300' 
-                    : 'text-white hover:text-amber-300'
-                }`}
-                style={isScrolled ? { color: '#ebf4e5' } : {}}
+                className="px-3 py-2 text-sm font-medium transition-colors hover:text-amber-300"
+                style={{ color: '#ebf4e5' }}
               >
                 Gallery
               </button>
               <button
                 onClick={() => scrollToSection('location')}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
-                  isScrolled 
-                    ? 'hover:text-amber-300' 
-                    : 'text-white hover:text-amber-300'
-                }`}
-                style={isScrolled ? { color: '#ebf4e5' } : {}}
+                className="px-3 py-2 text-sm font-medium transition-colors hover:text-amber-300"
+                style={{ color: '#ebf4e5' }}
               >
                 Location
               </button>
@@ -112,12 +88,8 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`focus:outline-none transition-colors ${
-                isScrolled 
-                  ? 'hover:text-amber-300 focus:text-amber-300' 
-                  : 'text-white hover:text-amber-300 focus:text-amber-300'
-              }`}
-              style={isScrolled ? { color: '#ebf4e5' } : {}}
+              className="focus:outline-none transition-colors hover:text-amber-300 focus:text-amber-300"
+              style={{ color: '#ebf4e5' }}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (

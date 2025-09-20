@@ -11,7 +11,11 @@ export default function Hero() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-up');
+            // Trigger animasi untuk content div
+            const contentDiv = entry.target.querySelector('.hero-content');
+            if (contentDiv) {
+              contentDiv.classList.add('animate-fade-up');
+            }
           }
         });
       },
@@ -28,9 +32,9 @@ export default function Hero() {
     <section 
       ref={heroRef}
       id="hero" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden opacity-0 scale-95 transition-all duration-1000 ease-out"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
+      {/* Background Image - Tidak ikut scale */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero/cikopai-interior.jpg"
@@ -40,20 +44,33 @@ export default function Hero() {
           priority
         />
         {/* Dark overlay untuk brightness */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
       
-      {/* Content */}
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 drop-shadow-lg opacity-0 translate-y-8 transition-all duration-1000 ease-out delay-200">
+      {/* Content - Hanya content yang di-animate */}
+      <div 
+        className="hero-content relative z-10 text-center text-white"
+        style={{ opacity: 0, transform: 'scale(0.95)' }}
+      >
+        <h1 
+          className="text-6xl md:text-8xl font-bold mb-6 drop-shadow-lg"
+          style={{ opacity: 0, transform: 'translateY(32px)' }}
+        >
           Cikopai
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-0 translate-y-8 transition-all duration-1000 ease-out delay-400">
+        <p 
+          className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md"
+          style={{ opacity: 0, transform: 'translateY(32px)' }}
+        >
           Coffee Shop yang menghadirkan pengalaman kopi terbaik dengan suasana yang hangat dan nyaman
         </p>
         <button 
-          className="text-white font-semibold py-3 px-8 transition-all duration-300 shadow-lg opacity-0 translate-y-8 delay-600" 
-          style={{ backgroundColor: '#2e4d3d' }} 
+          className="text-white font-semibold py-3 px-8 shadow-lg" 
+          style={{ 
+            backgroundColor: '#2e4d3d',
+            opacity: 0,
+            transform: 'translateY(32px)'
+          }} 
           onMouseEnter={(e) => e.target.style.backgroundColor = '#1a3a2e'} 
           onMouseLeave={(e) => e.target.style.backgroundColor = '#2e4d3d'}
         >
