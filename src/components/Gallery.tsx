@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-20 bg-white">
+    <section id="gallery" className="py-20" style={{ backgroundColor: '#ebf4e5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#2e4d3d' }}>
             The Ambiance
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto" style={{ color: '#2e4d3d' }}>
             Suasana hangat dan nyaman yang membuat setiap kunjungan terasa istimewa
           </p>
         </div>

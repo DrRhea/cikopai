@@ -5,23 +5,23 @@ export default function TheStory() {
     <section id="the-story" className="py-20" style={{ backgroundColor: '#2e4d3d' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#ebf4e5' }}>
             The Story
           </h2>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto" style={{ color: '#ebf4e5' }}>
             Cerita di balik setiap cangkir kopi yang kami sajikan
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-6">
+            <h3 className="text-3xl font-bold mb-6" style={{ color: '#ebf4e5' }}>
               Perjalanan Kami
             </h3>
-            <p className="text-lg text-white/90 mb-6">
+            <p className="text-lg mb-6" style={{ color: '#ebf4e5' }}>
               Cikopai dimulai dari kecintaan terhadap kopi berkualitas tinggi dan keinginan untuk berbagi pengalaman kopi terbaik dengan masyarakat.
             </p>
-            <p className="text-lg text-white/90">
+            <p className="text-lg" style={{ color: '#ebf4e5' }}>
               Setiap biji kopi dipilih dengan teliti dan disangrai dengan sempurna untuk memberikan cita rasa yang konsisten dan memuaskan.
             </p>
           </div>
