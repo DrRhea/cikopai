@@ -6,6 +6,7 @@ const aleo = Aleo({
   variable: "--font-aleo",
   subsets: ["latin"],
   weight: ["300", "400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
