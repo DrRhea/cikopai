@@ -51,7 +51,7 @@ export default function Footer() {
               Cikopai
             </h3>
             <p className="text-base leading-relaxed opacity-80" style={{ color: '#ebf4e5' }}>
-              Nikmati pengalaman kopi terbaik dengan cinta dan keahlian yang tak tertandingi.
+              Doa Heula Sateuacan Ngopi
             </p>
           </div>
 
