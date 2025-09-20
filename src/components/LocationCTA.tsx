@@ -34,7 +34,7 @@ export default function LocationCTA() {
           </div>
           
           {/* Call to Action */}
-          <div className="bg-white rounded-lg p-8 shadow-lg">
+          <div className="bg-white p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Mari Berkunjung!
             </h3>
@@ -43,10 +43,10 @@ export default function LocationCTA() {
               Tim kami siap melayani Anda dengan senyuman.
             </p>
             <div className="space-y-4">
-              <button className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+              <button className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 transition-colors">
                 Hubungi Kami
               </button>
-              <button className="w-full border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+              <button className="w-full border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold py-3 px-6 transition-colors">
                 Lihat Menu Lengkap
               </button>
             </div>

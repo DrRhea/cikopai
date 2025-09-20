@@ -24,7 +24,7 @@ export default function Hero() {
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
           Coffee Shop yang menghadirkan pengalaman kopi terbaik dengan suasana yang hangat dan nyaman
         </p>
-        <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg">
+        <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 transition-colors shadow-lg">
           Jelajahi Menu Kami
         </button>
       </div>

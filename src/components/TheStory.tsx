@@ -25,7 +25,7 @@ export default function TheStory() {
               Setiap biji kopi dipilih dengan teliti dan disangrai dengan sempurna untuk memberikan cita rasa yang konsisten dan memuaskan.
             </p>
           </div>
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
+          <div className="relative overflow-hidden shadow-lg">
             <Image
               src="/images/story/cikopai-coffee-story.jpg"
               alt="Cikopai Coffee Story - Coffee beans and preparation"

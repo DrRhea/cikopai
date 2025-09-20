@@ -12,22 +12,22 @@ export default function Gallery() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+          <div className="bg-gray-200 h-64 flex items-center justify-center">
             <p className="text-gray-500">Gallery Image 1</p>
           </div>
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+          <div className="bg-gray-200 h-64 flex items-center justify-center">
             <p className="text-gray-500">Gallery Image 2</p>
           </div>
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+          <div className="bg-gray-200 h-64 flex items-center justify-center">
             <p className="text-gray-500">Gallery Image 3</p>
           </div>
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+          <div className="bg-gray-200 h-64 flex items-center justify-center">
             <p className="text-gray-500">Gallery Image 4</p>
           </div>
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+          <div className="bg-gray-200 h-64 flex items-center justify-center">
             <p className="text-gray-500">Gallery Image 5</p>
           </div>
-          <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+          <div className="bg-gray-200 h-64 flex items-center justify-center">
             <p className="text-gray-500">Gallery Image 6</p>
           </div>
         </div>
