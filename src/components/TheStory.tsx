@@ -44,6 +44,7 @@ export default function TheStory() {
     <section 
       ref={sectionRef}
       id="the-story" 
+      className="overflow-x-hidden"
       style={{ 
         background: 'linear-gradient(to bottom, #2e4d3d 0%, #1a3a2e 100%)'
       }}
@@ -82,7 +83,7 @@ export default function TheStory() {
         {/* Right Grid - Image */}
         <div 
           ref={imageRef}
-          className="relative overflow-hidden"
+          className="relative overflow-hidden w-full"
           style={{ 
             opacity: 0,
             transform: 'translateX(50px)',
