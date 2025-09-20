@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function SignatureMenu() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -72,11 +73,11 @@ export default function SignatureMenu() {
         
         <div 
           ref={menuGridRef}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
         >
-          {/* Menu items akan ditambahkan nanti */}
+          {/* Iced Coffee Rosemary */}
           <div 
-            className="p-8 text-center" 
+            className="overflow-hidden" 
             style={{ 
               backgroundColor: '#2e4d3d',
               opacity: 0,
@@ -84,11 +85,24 @@ export default function SignatureMenu() {
               transition: 'all 0.6s ease-out'
             }}
           >
-            <h3 className="text-2xl font-semibold mb-4" style={{ color: '#ebf4e5' }}>Menu Item 1</h3>
-            <p style={{ color: '#ebf4e5' }}>Deskripsi menu akan ditambahkan</p>
+            <div className="relative">
+              <Image
+                src="/images/menu/cikopai-iced-coffee-rosemary.jpg"
+                alt="Cikopai Iced Coffee with Rosemary - Refreshing coffee with herbal garnish"
+                width={400}
+                height={300}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="p-4 text-center">
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#ebf4e5' }}>Iced Coffee Rosemary</h3>
+              <p className="text-sm" style={{ color: '#ebf4e5' }}>Kopi dingin segar dengan garnish rosemary yang memberikan aroma herbal yang unik</p>
+            </div>
           </div>
+
+          {/* Latte & Croissant */}
           <div 
-            className="p-8 text-center" 
+            className="overflow-hidden" 
             style={{ 
               backgroundColor: '#2e4d3d',
               opacity: 0,
@@ -96,20 +110,19 @@ export default function SignatureMenu() {
               transition: 'all 0.6s ease-out'
             }}
           >
-            <h3 className="text-2xl font-semibold mb-4" style={{ color: '#ebf4e5' }}>Menu Item 2</h3>
-            <p style={{ color: '#ebf4e5' }}>Deskripsi menu akan ditambahkan</p>
-          </div>
-          <div 
-            className="p-8 text-center" 
-            style={{ 
-              backgroundColor: '#2e4d3d',
-              opacity: 0,
-              transform: 'translateY(32px) scale(0.95)',
-              transition: 'all 0.6s ease-out'
-            }}
-          >
-            <h3 className="text-2xl font-semibold mb-4" style={{ color: '#ebf4e5' }}>Menu Item 3</h3>
-            <p style={{ color: '#ebf4e5' }}>Deskripsi menu akan ditambahkan</p>
+            <div className="relative">
+              <Image
+                src="/images/menu/cikopai-latte-croissant.jpg"
+                alt="Cikopai Latte with Croissant - Classic breakfast pairing"
+                width={400}
+                height={300}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="p-4 text-center">
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#ebf4e5' }}>Latte & Croissant</h3>
+              <p className="text-sm" style={{ color: '#ebf4e5' }}>Pasangan klasik latte dengan croissant renyah yang sempurna untuk sarapan</p>
+            </div>
           </div>
         </div>
       </div>
