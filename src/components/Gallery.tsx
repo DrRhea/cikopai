@@ -14,7 +14,7 @@ export default function Gallery() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+          <div className="relative overflow-hidden shadow-lg group">
             <Image
               src="/images/ambiance/cikopai-cafe-interior.jpg"
               alt="Cikopai Cafe Interior - Industrial chic design with warm lighting"
@@ -23,7 +23,7 @@ export default function Gallery() {
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+          <div className="relative overflow-hidden shadow-lg group">
             <Image
               src="/images/ambiance/cikopai-cozy-atmosphere.jpg"
               alt="Cikopai Cozy Atmosphere - Warm and inviting cafe environment"
@@ -32,7 +32,7 @@ export default function Gallery() {
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+          <div className="relative overflow-hidden shadow-lg group">
             <Image
               src="/images/ambiance/cikopai-social-gathering.jpg"
               alt="Cikopai Social Gathering - Community space for meetings and conversations"
@@ -41,7 +41,7 @@ export default function Gallery() {
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="relative rounded-lg overflow-hidden shadow-lg group">
+          <div className="relative overflow-hidden shadow-lg group">
             <Image
               src="/images/ambiance/cikopai-customer-experience.jpg"
               alt="Cikopai Customer Experience - Relaxed atmosphere for enjoying coffee"
