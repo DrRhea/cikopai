@@ -34,13 +34,13 @@ export default function Hero() {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image - Tidak ikut scale */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image - Dengan animasi zoom */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
           src="/images/hero/cikopai-interior.jpg"
           alt="Cikopai Coffee Shop Interior"
           fill
-          className="object-cover"
+          className="object-cover hero-background-zoom"
           priority
         />
         {/* Dark overlay untuk brightness */}

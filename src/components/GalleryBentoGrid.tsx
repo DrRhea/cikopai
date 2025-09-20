@@ -24,13 +24,16 @@ export default function GalleryBentoGrid() {
             
             // Animate grid items with stagger effect
             if (gridRef.current) {
-              const gridItems = gridRef.current.children;
-              Array.from(gridItems).forEach((item, index) => {
-                setTimeout(() => {
-                  (item as HTMLElement).style.opacity = '1';
-                  (item as HTMLElement).style.transform = 'translateY(0) scale(1)';
-                }, index * 150); // Stagger delay 150ms per item
-              });
+              const bentoGrid = gridRef.current.querySelector('[class*="grid"]');
+              if (bentoGrid) {
+                const gridItems = bentoGrid.children;
+                Array.from(gridItems).forEach((item, index) => {
+                  setTimeout(() => {
+                    (item as HTMLElement).style.opacity = '1';
+                    (item as HTMLElement).style.transform = 'translateY(0) scale(1)';
+                  }, index * 150); // Stagger delay 150ms per item
+                });
+              }
             }
           }
         });
@@ -99,11 +102,9 @@ export default function GalleryBentoGrid() {
 // Custom Image Component for Bento Grid
 const AmbientImage = ({ src, alt, className }: { src: string; alt: string; className?: string }) => (
   <div className={cn("relative overflow-hidden", className)}>
-    <Image
+    <img
       src={src}
       alt={alt}
-      width={600}
-      height={400}
       className="w-full h-full object-cover group-hover/bento:scale-105 transition-transform duration-500"
     />
   </div>

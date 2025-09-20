@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,10 +37,15 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-2xl font-bold transition-colors hover:text-amber-300"
-              style={{ color: '#ebf4e5' }}
+              className="transition-all duration-300 hover:opacity-80"
             >
-              Cikopai
+              <img
+                src="/images/logo/cikopai-logo.png"
+                alt="Cikopai Logo"
+                className={`h-10 w-auto transition-all duration-300 ${
+                  isScrolled ? 'border border-[#ebf4e5] p-1' : ''
+                }`}
+              />
             </button>
           </div>
 

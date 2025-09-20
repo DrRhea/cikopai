@@ -65,3 +65,17 @@ body {
   min-height: 100vh !important;
   height: 100vh !important;
 }
+
+/* Background zoom animation */
+@keyframes backgroundZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.hero-background-zoom {
+  animation: backgroundZoom 2000ms ease-out forwards;
+}

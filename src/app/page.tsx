@@ -4,6 +4,7 @@ import SignatureMenu from '@/components/SignatureMenu';
 import TheStory from '@/components/TheStory';
 import Gallery from '@/components/Gallery';
 import LocationCTA from '@/components/LocationCTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <TheStory />
       <Gallery />
       <LocationCTA />
+      <Footer />
     </div>
   );
 }

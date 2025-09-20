@@ -40,6 +40,12 @@ export const BentoGridItem = ({
         (title || description || icon) ? "p-4 border border-neutral-200 bg-white shadow-input hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none" : "p-0",
         className,
       )}
+      style={{
+        // Apply initial animation styles for all items
+        opacity: 0,
+        transform: 'translateY(32px) scale(0.95)',
+        transition: 'all 0.6s ease-out'
+      }}
     >
       {header}
       {(title || description || icon) && (
