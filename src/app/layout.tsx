@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Aleo } from "next/font/google";
 import "./globals.css";
 
@@ -10,6 +10,7 @@ const aleo = Aleo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cikopai.vercel.app'),
   title: "Cikopai - Coffee Shop Terbaik di Jakarta",
   description: "Nikmati pengalaman kopi terbaik di Cikopai. Coffee shop dengan suasana hangat dan nyaman di Jakarta. Menu kopi berkualitas tinggi, signature drinks, dan pelayanan terbaik.",
   keywords: "coffee shop jakarta, kopi jakarta, cikopai, coffee shop terbaik, kopi berkualitas, coffee shop cibubur, kopi premium, coffee experience",
@@ -39,9 +40,13 @@ export const metadata: Metadata = {
     description: "Nikmati pengalaman kopi terbaik di Cikopai. Coffee shop dengan suasana hangat dan nyaman di Jakarta.",
     images: ["/images/hero/cikopai-interior.jpg"],
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#2e4d3d",
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#2e4d3d',
+}
 
 export default function RootLayout({
   children,
@@ -51,9 +56,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#2e4d3d" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Cikopai" />
