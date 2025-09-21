@@ -40,6 +40,14 @@ export const metadata: Metadata = {
     description: "Nikmati pengalaman kopi terbaik di Cikopai. Coffee shop dengan suasana hangat dan nyaman di Jakarta.",
     images: ["/images/hero/cikopai-interior.jpg"],
   },
+  icons: {
+    icon: [
+      {
+        url: "/images/favicon.ico",
+        href: "/images/favicon.ico",
+      },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
@@ -56,6 +64,8 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
+        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
